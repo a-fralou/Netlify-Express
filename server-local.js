@@ -21,6 +21,9 @@ app.use('/page1', page1);
 app.use('/page2', page2);
 app.use('/page3', page3);
 app.use('/page4', page4);
+app.get('/api', (req, res) => {
+  res.send('Run apis test')
+})
 
 // Start Server.
 let port = 3005;
